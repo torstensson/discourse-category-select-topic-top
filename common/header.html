@@ -71,6 +71,11 @@
         }
         return postCache[id];
       }
+    }),
+    api.decorateWidget('category-top-topic:after', helper => {
+        helper.widget.appEvents.on('page:changed', () => {
+            helper.widget.scheduleRerender();
+        });
     });
   </script>
   
