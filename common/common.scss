@@ -2,6 +2,33 @@
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 5.8572em 8px 8px 8px;
+    padding: 4em 8px 8px 8px;
     margin-bottom: -5.8572em;
+    text-align: center;
+    font-size:1.5em;
+    color: $secondary;
+}
+
+.category-top-topic-contents h1 {
+    color: $quaternary;
+    font-size:2em;
+}
+    
+.category-top-topic-contents img {
+    height: auto;
+}
+
+.category-top-topic {
+    background: $tertiary;
+    margin-bottom: 20px;
+}
+
+[data-header-divider] {
+    background: $secondary;
+    box-shadow: 0 -8px 6px -6px rgba(0,0,0,0.2);
+    color: $primary;
+    margin: 0 -8px -10px -8px;
+    padding: 10px 10px 20px 10px;
+    text-align: left;
+    font-size: 1em;
 }
