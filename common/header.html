@@ -24,7 +24,8 @@
         const category = controller.get("category");
       
         function sidebarClasses(setup) {
-          $("body").addClass("custom-sidebar");
+          $("body").addClass("custom-top-topic");
+          $(".topic-list").addClass("with-top-topic");
         }
         if (/^\/c\//.test(path) && setups[category.slug]){ // If set, show category sidebar
           const setup = setups[category.slug];
@@ -57,8 +58,8 @@
           ];
           return h("div.category-top-topic-contents " + ".category-top-topic-all", nodes);      
        } else {
-          $("body").removeClass("custom-sidebar");
-          $(".topic-list").removeClass("with-sidebar");
+          $("body").removeClass("custom-top-topic");
+          $(".topic-list").removeClass("with-top-topic");
         }
       },
       getPost(id) {
@@ -74,5 +75,6 @@
   </script>
   
   <script type='text/x-handlebars' data-template-name='/connectors/below-site-header/category-top-topic'>
+    
     <div class="category-top-topic"> {{mount-widget widget="category-top-topic"}} </div>
   </script>
