@@ -22,13 +22,9 @@
         const path = window.location.pathname;
         const controller = container.lookup("controller:navigation/category");
         const category = controller.get("category");
-        const stickyOffset  = document.getElementsByClassName('d-header')[0].offsetHeight + 20;
-        const sidebarWrapper = document.getElementById("fixed-wrapper");
       
         function sidebarClasses(setup) {
           $("body").addClass("custom-sidebar");
-          $(".topic-list").addClass("with-sidebar").addClass(settings.sidebar_side);
-          $(".sticky-sidebar").css("top", stickyOffset + "px");
         }
         if (/^\/c\//.test(path) && setups[category.slug]){ // If set, show category sidebar
           const setup = setups[category.slug];
