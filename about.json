@@ -1,0 +1,10 @@
+{
+    "name": "discourse-category-select-topic-top",
+    "license_url": "https://github.com/torstensson/discourse-category-select-topic-top/blob/master/LICENSE",
+    "about_url": "https://github.com/torstensson/discourse-category-select-topic-top/blob/master/README.md",
+    "component": true,
+    "assets": {
+    },
+    "color_schemes": {
+    }
+  }
